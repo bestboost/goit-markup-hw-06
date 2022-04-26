@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+         rel="stylesheet">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <form class="form">
+    <div class="form-field">
+        <label for="name" class="form-lable">Имя</label>
+        <input class="form-input" type="text" name="name" id="name" placeholder="Jon Jeison" autofocus />
+    </div>
+    <div class="form-field">
+        <lable for="tel">Телефон</lable>
+        <input class="text" name="tel" id="tel" placeholder="+38 123 123 0000" />
+    </div>
+    <div class="form-field">
+        <lable for="mail">Почта</lable>
+        <input class="email" name="mail" id="mail" placeholder="exemple@mail.com" />
+    </div>
+
+        
+    
+    <div role="group"> 
+        <h2 class="group-title">Тема доклада</h2>
+        <ul class="topic-options">
+            <li>
+                  <input type="checkbox" name="topic" value="html" id="html" />
+                  <label for="html">HTML</label>
+            </li>
+            <li>
+                  <input type="checkbox" name="topic" value="css" id="css" />
+                  <label for="css">CSS</label>
+            </li>  
+            <li>
+                  <input type="checkbox" name="topic" value="js" id="js" />
+                  <label for="js">JavaScript</label>
+            </li>
+        </ul> 
+    </div> 
+    
+
+    <div role="group">
+       <input type="radio" name="experience" value="junior" id="junior" />
+       <label for="junior">Junior</label>
+
+       <input type="radio" name="experience" value="middle" id="middle" />
+       <label for="middle">Middle</label>
+
+       <input type="radio" name="experience" value="senior" id="senior" />
+       <label for="senior">Senior</label>
+    </div>
+
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" />
+
+        
+        <label for="pdf">Загрузите копию доклада в pdf</label>
+        <input type="file" name="pdf" id="pdf" />
+
+        <label for="comment">Оставьте коментарий</label>
+        <textarea name="comment" id="comment"  rows="10"></textarea>
+
+        
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">Соглашаюсь на все, за еду</label>
+
+
+
+
+
+        <button type="submit">Оставить заявку</button>
+    </form>
+</body>
+</html>

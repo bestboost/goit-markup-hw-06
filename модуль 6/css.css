@@ -1,0 +1,40 @@
+body {
+
+    background-color: #FFFFFF;
+    font-family:Roboto, sans-serif;
+   }
+
+
+textarea {
+    resize: none;
+}
+
+.form {
+    width: 600px;
+    outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.form-field {
+    outline: 1px solid mediumaquamarine;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-field label {
+    color: #2a2a2a;
+}
+.form-field input {
+    margin: 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border:0.5px solid lightgray
+}
+
+.form-field input::placeholder {
+    color: rgba(255, 160, 122, 0.8);
+    font-size: 15px;
+    text-align: right;
+}
