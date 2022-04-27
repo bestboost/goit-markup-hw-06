@@ -28,7 +28,7 @@
 
         
     
-    <div role="group"> 
+    <div role="group" class="group"> 
         <h2 class="group-title">Тема доклада</h2>
         <ul class="topic-options">
             <li>
@@ -47,32 +47,43 @@
     </div> 
     
 
-    <div role="group">
-       <input type="radio" name="experience" value="junior" id="junior" />
-       <label for="junior">Junior</label>
-
-       <input type="radio" name="experience" value="middle" id="middle" />
-       <label for="middle">Middle</label>
-
-       <input type="radio" name="experience" value="senior" id="senior" />
-       <label for="senior">Senior</label>
+    <div role="group" class="group">
+        <h2 class="group-title">Уровень вашей экспертности</h2>
+        <ul class="topic-options">
+            <li>
+                 <input type="radio" name="experience" value="junior" id="junior" />
+                 <label for="junior">Junior</label>
+            </li>   
+            <li>
+                 <input type="radio" name="experience" value="middle" id="middle" />
+                 <label for="middle">Middle</label>
+            </li>    
+            <li>
+                 <input type="radio" name="experience" value="senior" id="senior" />
+                 <label for="senior">Senior</label>
+            </li>
+        </ul>
     </div>
 
+    <div class="form-field">
         <label for="date">Дата доклада</label>
-        <input type="datetime-local" name="date" id="date" />
-
-        
+        <input type="datetime-local" name="date" id="date" class="date" />
+    </div>
+    
+    <div class="form-field">   
         <label for="pdf">Загрузите копию доклада в pdf</label>
         <input type="file" name="pdf" id="pdf" />
+    </div>
 
+    <div class="form-field">
         <label for="comment">Оставьте коментарий</label>
-        <textarea name="comment" id="comment"  rows="10"></textarea>
+        <textarea name="comment" id="comment" rows="10" class="comment"></textarea>
+    </div>
 
-        
+    <div class="form-field">   
         <input type="checkbox" name="policy" id="policy" />
         <label for="policy">Соглашаюсь на все, за еду</label>
-
-
+    </div>
 
 
 
