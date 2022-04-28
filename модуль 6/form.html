@@ -14,16 +14,22 @@
 <body>
     <form class="form">
     <div class="form-field">
+        
+        <input class="form-input" type="text" name="name" id="name" placeholder="   " />
         <label for="name" class="form-lable">Имя</label>
-        <input class="form-input" type="text" name="name" id="name" placeholder="Jon Jeison" />
+        <span class="icon"></span>
     </div>
     <div class="form-field">
-        <lable for="tel">Телефон</lable>
-        <input class="text" name="tel" id="tel" placeholder="+38 123 123 0000" />
+       
+        <input class="text form-input" name="tel" id="tel" placeholder=" " />
+        <lable for="tel" class="form-lable">Телефон</lable>
+        <span class="icon"></span>
     </div>
     <div class="form-field">
-        <lable for="mail">Почта</lable>
-        <input class="email" name="mail" id="mail" placeholder="exemple@mail.com" />
+        
+        <input class="email form-input" name="mail" id="mail" placeholder=" " />
+        <lable for="mail" class="form-lable">Почта</lable>
+        <span class="icon"></span>
     </div>
 
         
@@ -80,9 +86,14 @@
         <textarea name="comment" id="comment" rows="10" class="comment"></textarea>
     </div>
 
+
+
     <div class="form-field">   
-        <input type="checkbox" name="policy" id="policy" />
-        <label for="policy">Соглашаюсь на все, за еду</label>
+    <label class="checkbox-lable" for="policy">
+        <input class="checkbox" type="checkbox" name="policy" id="policy" />
+        <span class="icon-checkbox"></span>
+        <span class="checkbox-text">Соглашаюсь на все, за еду</span>
+    </label>
     </div>
 
 
