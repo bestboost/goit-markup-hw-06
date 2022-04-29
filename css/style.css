@@ -888,8 +888,10 @@ textarea {
      color: var(--title-color);
  }
  
- .form-input:hover + .icon-form {
+ .form-input:focus ~ .icon-form {
     color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    background-color: rebeccapurple;
  }
  
  .checkbox {
