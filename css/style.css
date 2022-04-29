@@ -740,7 +740,7 @@ textarea {
 }
 
 .form-title {
-    /* margin-bottom: 15px; */
+    margin-bottom: 12px;
     color: var(--title-color);
     font-weight: 700;
     font-size: 20px;
@@ -750,20 +750,16 @@ textarea {
 
 .form-field {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
 .form-field label {
-    /* margin-bottom: 4px; */
     color: var(--main-text-color);
     font-size: 12px;
     line-height: 14px;
 }
 .form-field input {
-    
-    /* margin-bottom: 10px; */
+    margin-top: 4px;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -771,7 +767,7 @@ textarea {
 }
 
 .form-field textarea {
-    /* margin-bottom: 10px; */
+    margin-top: 4px;
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -792,7 +788,6 @@ textarea {
 
 
 .form-lable {
-    /* margin-top: 0; */
     transform: translateY( -50%);
     transition: transform 250ms liner;
  }
@@ -872,11 +867,10 @@ textarea {
 
 
 .submit-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* margin: 0; */
+    position: absolute;
+    transform: translateX( 60%);
+    margin-top: 10px;
+    margin-bottom: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 200px;
