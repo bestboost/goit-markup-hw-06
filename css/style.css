@@ -438,11 +438,16 @@ img {
 
  /* footer */
  .footer-content {
-     display: flex;
-     align-items: baseline;
+    display: flex;
+    align-items: baseline;
+  
  }
 
- .page-footer {
+.footer-item {
+    flex-grow: 1;
+}
+
+.page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -541,10 +546,8 @@ img {
 /* call to action */
 
 .footer-form {
-    position: relative;
     margin-left: 93px;
     width: 570px;
-    height: 86px;
 }
 
 .call-text {
@@ -557,19 +560,15 @@ img {
     text-transform: uppercase;
 }
 
-.footer-form-field label {
-    position: absolute;
-    top: 60%;
-    left: 16px;
-    
+.footer-form-field input::placeholder { 
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.3;
 }
 
 .footer-form-field input {
-    position: absolute;
-    padding-left: 70px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 358px;
     height: 50px;
 
@@ -582,9 +581,10 @@ img {
 }    
 
 .call-to-action {
-    position: absolute;
-    transform: translateX( 370px);
-    margin-left: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
     
     padding-top: 10px;
     padding-bottom: 10px;
@@ -809,10 +809,11 @@ img {
 
 textarea {
     resize: none;
+    display: block;
 }
 
 .form {
-    margin: 40px;
+    padding: 40px;
 }
 
 .form-title {
@@ -856,6 +857,7 @@ textarea {
 
 .form-field textarea {
     margin-top: 4px;
+    margin-bottom: 20px;
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -874,7 +876,7 @@ textarea {
 
  .icon-form {
      position:absolute;
-     top: 50%;
+     top: 54%;
      left: 12px;
      display: inline-block;
    
@@ -888,6 +890,13 @@ textarea {
   
 }
  
+.form-field-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .checkbox {
 
         position: absolute;
@@ -914,7 +923,7 @@ textarea {
     display: inline-block;
     width: 16px;
     height: 15px;
-    margin-left: 12px;
+   
     margin-right: 8px;
     border: 2px solid var(--title-color);
     border-radius: 4px;
@@ -926,17 +935,17 @@ textarea {
     background-image: url('../images/icon-check-1.svg');
     background-size: contain;
     background-origin: border-box;
- }
+    background-repeat: no-repeat;
+}
  
 .police-link {
     color: var(--accent-color);
 }
 
 .submit-button {
-    position: absolute;
-    transform: translateX( 60%);
-    margin-top: 10px;
-    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 200px;
